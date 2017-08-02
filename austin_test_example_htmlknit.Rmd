@@ -28,7 +28,16 @@ summary(cars)
 You can also embed plots, for example:
 
 ```{r pressure, echo=FALSE}
+
+# Pressure graph using plot()
 plot(pressure)
+
+#Pressure graph using qplot
+qplot(temperature, pressure, data = pressure, geom = "line")
+
+#Pressure graph using ggplot
+ggplot(data = pressure, aes(x = temperature, y = pressure)) + geom_line()
+
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
