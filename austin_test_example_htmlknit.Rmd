@@ -1,3 +1,4 @@
+
 ---
 title: "austin_test_rmarkdown"
 author: "Austin Layton"
@@ -7,6 +8,9 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+
+library(ggplot2)
+
 ```
 
 ## R Markdown
